@@ -1,23 +1,10 @@
-name: Hello world
-on: workflow_dispatch
+name: Hello World
+on: push
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Step
-        run: echo "hello build"
+      - name: Build Step
+        run: echo "A demo build"
 
-  test: 
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Hello Step
-        run: echo "hello test"
-
-  deploy: 
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - name: Hello Step
-        run: echo "hello deploy"
 
