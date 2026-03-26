@@ -19,5 +19,5 @@ jobs:
     needs: test
     steps:
       - name: Hello Step
-        run: echo "hello deploy
+        run: echo "hello deploy"
 
